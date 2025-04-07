@@ -29,7 +29,7 @@ export default function FeedbackForm({ darkMode }) {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:3001/feedbacks', {
+      const response = await fetch('https://feedback-collector-wks8.onrender.com/feedbacks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
