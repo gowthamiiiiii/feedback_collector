@@ -10,7 +10,7 @@ export default function Admin() {
   useEffect(() => {
     const fetchFeedbacks = async () => {
       try {
-        const response = await fetch('http://localhost:3001/feedbacks');
+        const response = await fetch('https://feedback-collector-wks8.onrender.com/feedbacks');
         const data = await response.json();
         setFeedbacks(data);
       } catch (error) {
